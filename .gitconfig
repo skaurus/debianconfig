@@ -1,0 +1,19 @@
+[user]
+    name = "Dmitry Shalashov"
+    email = "skaurus@gmail.com"
+
+[core]
+    autocrlf = false
+    editor = vim
+    whitespace = blank-at-eol, blank-at-eof
+
+[diff]
+    algorithm = patience
+
+[push]
+    default = upstream
+
+[merge]
+    tool = vimdiff
+    stat = true
+
