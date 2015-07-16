@@ -1,3 +1,4 @@
+```shell
 # how to put this files to your home dir
 # I am assuming fresh server, without keys or much other setup
 # make sure you are under your user
@@ -12,3 +13,4 @@ git clone git@github.com:skaurus/debianconfig.git && cd debianconfig/
 git submodule init && git pull --recurse-submodules
 # WARNING! files from repository will OVERWRITE all files with same names
 cd ~ && rsync -av ./debianconfig/{.bashrc,.vimrc,.vim} ./
+```
