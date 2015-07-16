@@ -12,5 +12,5 @@ chmod 600 .ssh/id_rsa
 git clone git@github.com:skaurus/debianconfig.git && cd debianconfig/
 git submodule init && git pull --recurse-submodules
 # WARNING! files from repository will OVERWRITE all files with same names
-cd ~ && rsync -av ./debianconfig/{.bashrc,.vimrc,.vim} ./
+cd ~ && rsync -av ./debianconfig/{.bashrc,.gitconfig,.vimrc,.vim} ./
 ```
