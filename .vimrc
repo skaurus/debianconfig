@@ -187,6 +187,17 @@ augroup END
 
 " change paste mode to correctly insert multiline tabbed text
 set pastetoggle=<F6>
+" and this block of config should togge pasting mode automatically
+let &t_SI .= "\<Esc>[?2004h"
+let &t_EI .= "\<Esc>[?2004l"
+
+inoremap <special> <expr> <Esc>[200~ XTermPasteBegin()
+
+function! XTermPasteBegin()
+  set pastetoggle=<Esc>[201~
+  set paste
+  return ""
+endfunction
 
 
 " additions from http://statico.github.io/vim.html and http://statico.github.io/vim2.html
