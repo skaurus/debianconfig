@@ -8,7 +8,7 @@ touch .ssh/id_rsa && chmod 600 .ssh/id_rsa
 # put your private ssh key to this file
 # ... done
 git clone git@github.com:skaurus/debianconfig.git && cd debianconfig/
-git submodule init && git pull --recurse-submodules
+git submodule init && git submodule update --recursive
 # WARNING! files from repository will OVERWRITE all files with same names
 cd ~ && rsync -av ./debianconfig/{.bashrc,.gitconfig,.vimrc,.vim} ./
 touch .ssh/authorized_keys && chmod 600 .ssh/authorized_keys
