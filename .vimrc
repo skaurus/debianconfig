@@ -144,7 +144,7 @@ au FileType text
 au VimEnter *
   \ echo "Welcome back!"
 au VimLeave *
-  \ echo "Later! (-"
+  \ echo "Bye!"
 au BufWinEnter *.txt
   \ call CheckFileEncoding()
 au BufWinEnter *.cpp
