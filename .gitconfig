@@ -17,3 +17,5 @@
     tool = vimdiff
     stat = true
 
+[help]
+    autocorrect = 30
